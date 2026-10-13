@@ -62,4 +62,41 @@ ________________________________________________________________________________
 
 ## Step 2: Safety INT8 Baseline Quantization
 
+{
+  "split": "provisional",
+  "accuracy": 0.9827777777777778,
+  "worst_class_accuracy": 0.955,
+  "per_class_recall": [
+    0.9717,
+    0.995,
+    0.97,
+    0.998,
+    0.998,
+    0.955,
+    0.976,
+    0.9983,
+    0.976,
+    0.9833
+  ],
+  "n_val": 5400
+}
+
+ "framework": "onnxruntime",
+  "params_million": 2.288,
+  "size_mb": 2.4906,
+  "latency_ms": 1.9414,
+  "peak_ram_mb": 91.7227,
+  "joules_per_inference": 0.0389,
+  "codecarbon_cpu_power_w": 4.4714,
+  "codecarbon_tracking_mode": "machine"
+
+_________________________________________________________________________________________
+
+## Step 3: Prune Sweeping! 
+
+# Methodology: Tune among four factors:
+1. IMPORTANCE FACTOR (which filters get cut first)  --> Hidden Channels?
+2. RATIOS (How many of total filters get cut) 
+3. PRESERVED LAYERS (high risk low reward)
+
 

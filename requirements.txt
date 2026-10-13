@@ -52,6 +52,7 @@ pydantic_core==2.50.1
 Pygments==2.21.0
 pyparsing==3.3.3
 python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
 qai-hub==0.56.0
 questionary==2.1.1
 RapidFuzz==3.14.6
